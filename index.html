@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de IMC</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    <h1>Calcule seu IMC</h1>
+    <div id="container">
+        <div id="infoIMC">
+            <ul>
+                <li>IMC abaixo de 18.5 = Magreza</li>
+                <li>IMC entre 18.5 e 24.9 = Peso ideal</li>
+                <li>IMC entre 24.9 e 30 = Sobrepeso</li>
+                <li>IMC acima de 30 = Obesidade</li>
+            </ul>
+        </div>
+
+        <div id="medidas">
+            Altura(m):
+            <input type="number" id="txtAltura">
+            Peso(Kg): 
+            <input type="number" id="txtPeso">
+        </div>
+        <input id="botao" type="button" value="Calcular" onclick="calcular()">
+
+        <div>
+            <p id="res">Insira acima, sua altura e peso!</p>
+        </div>
+        <br>
+    </div>
+    <footer>
+        &copy; Samuel da Silva Pereira
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
